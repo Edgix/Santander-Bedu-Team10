@@ -1,2 +1,10 @@
-@import"./test";
+@import "./fonts";
+@import "./principal";
+@import "./results";
+@import "./dish";
 @import "~bootstrap/scss/bootstrap";
+
+.main {
+    background-color: hsl(56, 100%, 50%);
+    margin-top: 50px;    
+  }
