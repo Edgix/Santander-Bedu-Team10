@@ -1,105 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetario</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b48bbd0b76.js" crossorigin="anonymous"></script>
+
+
 </head>
+<header>
 
-<body class="main">
+<section class="fixed-header">
+    <header class="header">
+      <a href="/" class="logo">
+        <img src="./logo.svg" alt="Logo de munchies, tiene una pizza ;9"/>
+      </a>
 
-    <header id="header">
-        <img src="./img/cook_6.png" alt="logo" class="rounded float-start" id="logo">
-        <h3 class="display-7 w-75">CAMARONES AL MOJO DE AJO</h3>
+      <form>
+        <div class="searchBar">
+            <input type="Receta" class="form-search" id="buscar" placeholder="Look for a dish here!" >
+            <button class="primaryButton">Search   <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button> <button class= "secondaryButton">Random</button>
+      </div>
+
     </header>
+</section>
 
+<body>
 
-    <main>
+    <section class="video">
+        <p class= "videoHeader">Nombre de la receta</p>
+        <section class="videoReceta">
+            <video controls width="968px" height="472">
 
-        <div id="info1-dish" class="container">
-            <div class="row">
+                <source type="video/mp4"
+                    src="https://thv1.uloz.to/1/9/b/19b705e1fca7ca23ecb2c9cf9fc6041b.720.mp4?fs=h4Kr2eUAkKqc&fide=YM3U4QM&vt=1629151199&sg=UiIl_PXdc8kMX_oE0uU0Pw&bl=">
+            </video>
+        </section>
+    </section>
 
-                <!--Imagen del platillo-->
-                <div class="col-4" id="dish-result">
-                    <img src="./img/shrimp.jpg" alt="img_dish" id="img-dish" class="img-thumbnail mt-4">
-                </div>
-
-                <!--Imágenes de los ingredientes-->
-                <div class="col-8" id="dish-ingredients">
-                <h4>Ingredientes: </h4>
-                    <div id="ingredients" class="row row-cols-1 row-cols-md-3 g-4">
-                        
-                        <div class="col">
-                            <div class="card bg-transparent border-0" style="width: 10rem;">
-                                <img src="./img/i_1.png" class="card-img-top" alt="i_1">
-                                <div class="card-body">
-                                    <p class="card-text text-center">1/2 bag Rice Stick Noodles</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card bg-transparent border-0" style="width: 10rem;">
-                                <img src="./img/i_2.png" class="card-img-top" alt="i_2">
-                                <div class="card-body">
-                                    <p class="card-text text-center">8 oz Prawns</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card bg-transparent border-0" style="width: 10rem;">
-                                <img src="./img/i_3.png" class="card-img-top" alt="i_3">
-                                <div class="card-body">
-                                    <p class="card-text text-center">1/2 Egg</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card bg-transparent border-0" style="width: 10rem;">
-                                <img src="./img/i_4.png" class="card-img-top" alt="i_4">
-                                <div class="card-body">
-                                    <p class="card-text text-center">pinch Pepper</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card bg-transparent border-0" style="width: 10rem;">
-                                <img src="./img/i_5.png" class="card-img-top" alt="i_5">
-                                <div class="card-body">
-                                    <p class="card-text text-center">1 tsp Minced Garlic</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card bg-transparent border-0" style="width: 10rem;">
-                                <img src="./img/i_6.png" class="card-img-top" alt="i_6">
-                                <div class="card-body">
-                                    <p class="card-text text-center">1/2 cup Spring Onions</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--Instrucciones-->
-                <div class="col">
-                    <p id="instruc_dish">STEP 1 - SOAK THE RICE NOODLES Soak the rice noodles overnight untill they are soft STEP 2 - BOIL THE RICE NOODLES Boil the noodles for 10-15 minutes and then rinse with cold water to stop the cooking process of the noodles.
-                        STEP 3 -MARINATING THE SHRIMP In a bowl add the shrimp, egg, 1 pinch of white pepper, 1 Teaspoon of sesame seed oil, 1 Tablespoon corn starch and 1 tablespoon of oil Mix together well STEP 4 - STIR FRY In a wok add 2 Tablespoons of oil, shrimp and stir fry them until it is golden brown Set the shrimp aside Add 1 Tablespoon of oil to the work and then add minced garlic, ginger and all of the vegetables.
-                        Add the noodles to the wok Next add sherry cooking wine, oyster sauce, sugar, vinegar, sesame seed oil, 1 pinch white pepper, and soy sauce Add back in the shrimp To thicken the sauce, whisk together 1 Tablespoon of corn starch and 2 Tablespoon of water in a bowl and slowly add to your stir-fry until it's the right thickness.</p>
-                </div>
+    <p class= "introducciónReceta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat at placerat sed maecenas. Mauris, libero, sagittis in morbi. Est consequat nulla amet integer. Ligula orci libero, hendrerit urna sit pellentesque ac at et.
+        Convallis dolor gravida pretium sit vitae, fusce. Nec orci fermentum, arcu id aliquam a leo. At blandit eget viverra mauris.</p>
+    
+    
+    
+    <section class= "ingredients">
+        <h2>Ingredients</h2>
+        <section class="grid">
+            <div class="column">
+                <ol class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-utensils"></i></i></span>Ingredient 1</li>
+                    <li><span class="fa-li"><i class="fas fa-utensils"></i></i></span>Ingredient 2</li>
+                </ol>
             </div>
-        </div>
+            <div class="column">
+                <ol class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-utensils"></i></i></span>Ingredient 1</li>
+                    <li><span class="fa-li"><i class="fas fa-utensils"></i></i></span>Ingredient 2</li>
+                </ol>
+            </div>
+            <div class="column">
+                <ol class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-utensils"></i></i></span>Ingredient 1</li>
+                    <li><span class="fa-li"><i class="fas fa-utensils"></i></i></span>Ingredient 2</li>
+                </ol>
+            </div>
+        </section>
+    </section>  
 
-
-    </main>
-
+    <section class= "procedimiento">
+        <div class="pasos">
+            <h2>Procedure</h2>
+            <article class="paso1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpoNglAA7d_RSSDojq2H-Au7m_zsSj_jbX9PFZrV0LeqSfZmBUN6O_9pfAtLHTiZFu1RM&usqp=CAU" alt="Picture of a step of the procedure">
+                <p class="indicaciones">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat at placerat sed maecenas. Mauris, libero, sagittis in morbi. Est consequat nulla amet integer. Ligula orci libero, hendrerit urna sit pellentesque ac at et.
+                    Convallis dolor gravida pretium sit vitae, fusce. Nec orci fermentum, arcu id aliquam a leo. At blandit eget viverra mauris.</p>
+            </article>
+            <article class="paso2">
+                <p class= "indicaciones">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et leo ultricies nunc, odio egestas eu hac at
+                    ut. Accumsan pretium magna id fusce pellentesque. Vitae mattis enim non facilisis amet justo.</p>
+                <img src="https://gluc.mx/u/fotografias/m/2020/1/9/f638x638-21862_80029_5050.jpg"
+                    alt="Picture of another step of the procedure">
+            </article>
+            <article class="paso3">
+                <img src="https://imagenes.canalrcn.com/lomaslike/inline-images/meme%204.jpg" alt="Picture of a step of the procedure">
+                <p class="indicaciones">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat at placerat sed maecenas. Mauris, libero, sagittis in morbi. Est consequat nulla amet integer. Ligula orci libero, hendrerit urna sit pellentesque ac at et.
+                    Convallis dolor gravida pretium sit vitae, fusce. Nec orci fermentum, arcu id aliquam a leo. At blandit eget viverra mauris.</p>
+            </article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat at placerat sed maecenas. Mauris, libero, sagittis in morbi. Est consequat nulla amet integer. Ligula orci libero, hendrerit urna sit pellentesque ac at et.
+                Convallis dolor gravida pretium sit vitae, fusce. Nec orci fermentum, arcu id aliquam a leo. At blandit eget viverra mauris.</p>
+    </section>
 </body>
-
 </html>
