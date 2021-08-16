@@ -12,6 +12,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./src/index.html",
+    }), new HtmlWebpackPlugin({
+      filename: "dish.html",
+      template: "src/dish.html",
+      chunks:[]
     })
   ],
   devServer: {
