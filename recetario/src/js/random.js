@@ -22,7 +22,9 @@ export default function random() {
           img.src = element["strMealThumb"]; // Insertar el link de la imagen en la img
           img.style.height = "12.5rem"; //200 px
           let a = document.createElement("a"); //Crear a que será el link que nos llevará a la segunda página con la receta
-          a.href = "second.html?meal=" + element["strMeal"]; //href que nos envia a la página con la receta y un dato con el nombre del platillo
+          let meal = element["strMeal"];
+          meal = meal.replace(/ /g, "_")
+          a.href = "dish.html?meal="+meal; //href que nos envia a la página con la receta y un dato con el nombre del platillo
           a.appendChild(img);
           media.appendChild(a); // Insertar img en el a
 
