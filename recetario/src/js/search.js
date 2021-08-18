@@ -8,7 +8,6 @@ export default function search() {
     } else {
       url = "https://www.themealdb.com/api/json/v1/1/search.php?f=" + food;
     }
-
     
     fetch(url) // Solicitud a la API
       .then(function (response) {
@@ -18,6 +17,7 @@ export default function search() {
         if(document.getElementsByClassName("hero")[0]) document.body.removeChild(document.getElementsByClassName("hero")[0])
         data = data["meals"]; //Transformamos el JSON obtenido en un JSON más facil de manejar
         let container = document.getElementById("contenedor"); //Obtener el div que funcionará de contenedor para las Meal-cards
+        document.getElementById("contenedor").classList.add("recetas")
         if (container) container.innerHTML = ""; //Vaciar el div para reemplazarlo con la nueva info
         data.forEach((element) => {
           //Ciclo que recorre cada elemento del JSON (por elemento me refiero a los platillos)
