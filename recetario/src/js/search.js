@@ -6,7 +6,7 @@ export default function search() {
     if (food.length > 1) {
       url = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + food; // Revisar que el string de la comida a buscar sea mayor a 1 si lo es utilizamos el Metodo para comida completa  sino utilizamos el metodo de una sola letra
     } else {
-      url = "https://www.themealdb.com/api/json/v1/1/search.php?a=" + food;
+      url = "https://www.themealdb.com/api/json/v1/1/search.php?f=" + food;
     }
 
     fetch(url) // Solicitud a la API
@@ -14,6 +14,7 @@ export default function search() {
         return response.json();
       })
       .then(function (data) {
+        if(document.getElementsByClassName("hero")[0]) document.body.removeChild(document.getElementsByClassName("hero")[0])
         data = data["meals"]; //Transformamos el JSON obtenido en un JSON más facil de manejar
         let container = document.getElementById("contenedor"); //Obtener el div que funcionará de contenedor para las Meal-cards
         if (container) container.innerHTML = ""; //Vaciar el div para reemplazarlo con la nueva info

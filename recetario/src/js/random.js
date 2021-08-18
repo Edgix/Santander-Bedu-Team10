@@ -6,8 +6,10 @@ export default function random() {
         return response.json();
       })
       .then(function (data) {
+        if(document.getElementsByClassName("hero")[0]) document.body.removeChild(document.getElementsByClassName("hero")[0])
         data = data["meals"]; //Transformamos el JSON obtenido en un JSON más facil de manejar
         let container = document.getElementById("contenedor"); //Obtener el div que funcionará de contenedor para las Meal-cards
+        container.classList.add("recetas")
         if (container) container.innerHTML = ""; //Vaciar el div para reemplazarlo con la nueva info
         data.forEach((element) => {
           //Ciclo que recorre cada elemento del JSON (por elemento me refiero a los platillos)
