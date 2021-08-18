@@ -9,6 +9,7 @@ export default function search() {
       url = "https://www.themealdb.com/api/json/v1/1/search.php?f=" + food;
     }
 
+    
     fetch(url) // Solicitud a la API
       .then(function (response) {
         return response.json();
