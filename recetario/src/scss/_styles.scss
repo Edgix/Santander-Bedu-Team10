@@ -5,8 +5,10 @@ body{
 }
 
 input {
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
+    border-width: 2px;
+    border-color:#FF1D5D
 }
 
 .fixed-header {
@@ -16,7 +18,7 @@ input {
     left: 0;
     right: 0;
     background-color: #fffbf7;
-    padding: 30px;
+    padding: 32px;
     background-image: url(../img/Intersect.svg);
     background-repeat: no-repeat;
 
@@ -74,7 +76,7 @@ form input{
 
 button{
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 15px 10 15;
     width: 142px;
     height: 56px;
     left: 568px;
@@ -86,6 +88,7 @@ button{
     color: white;
     border-radius: 8px;
     margin: 5px;
+    border:0;
 }
 
 .primaryButton{
@@ -100,6 +103,18 @@ button{
 .recetas {
     display: flex;
     justify-content: center;
+    margin-top: 300px;
+}
+
+.recetaCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    color:#FF1D5D
+}
+
+
+.recetas img{
+    display: block;
 }
 
 .recetaCard {
@@ -113,24 +128,41 @@ button{
     padding: 10px;
     width: 250px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.recetaCard img{
+    border-radius: 8px;
+}
+
+.recetaCard h2{
+    margin: 10px;
 }
 
 .recetaTexto {
     text-align: center;
 }
 
-.video {
-    margin-top: 300px;
-    margin-right: 200px;
-    margin-left: 200px;
+.Img{
+    margin: 250px 100px 80px 200px;
+    overflow: hidden;
+    width: 967px;
+    height: 472px;
+}
+.Imgheader{
+    padding-bottom: 32;
+    font-weight: 700;
 }
 
-.videoHeader{
-    font-size: 25px;
-    font-weight: 600;
-}
-.videoReceta{
-    margin: 50px;
+#platillo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
 }
 
 .introducciónReceta{
@@ -155,30 +187,27 @@ button{
 .fa-li{
     color: #FF1D5D;
 }
-
 .procedimiento{
-    margin: 200px;
+    margin-left: 200px;
 }
 
-.pasos img{
-    border-radius: 8px;
-    width: 304px;
-    height: 288px;
+.pasos h2{
+    padding-bottom: 32px;
 }
 
 .pasoa{
     display: flex;
-    margin: 80px;
+    margin: 2px;
     align-items: center;
 }
 
 .pasob{
     display: flex;
-    margin: 80px;
+    margin: 2px;
     align-items: center;
     text-align: right;
 }
 
-.indicaciones{
-    padding: 20px;
+.videoWrapper{
+    margin: 50px auto 100px 200px
 }

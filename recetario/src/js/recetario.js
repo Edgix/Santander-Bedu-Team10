@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             .then(function (data) {
                 data = data["meals"][0];   //Hacemos más pequeño el JSON obtenido
                 document.getElementsByClassName("Imgheader")[0].textContent = data["strMeal"]; // insertamos el nombre del platillo
-                document.getElementsByClassName("videoWrapper")[0].innerHTML = '<iframe width="900" height="915" src="https://www.youtube.com/embed/' + data["strYoutube"].slice(-11) + '"></iframe>' //Insertamos el video tutorial de Youtube
+                document.getElementsByClassName("videoWrapper")[0].innerHTML = '<iframe width="967" height="472" src="https://www.youtube.com/embed/' + data["strYoutube"].slice(-11) + '"></iframe>' //Insertamos el video tutorial de Youtube
                 document.getElementById("platillo").src = data["strMealThumb"]; // Insertamos el url de la img del platillo
                 document.getElementsByClassName("grid")[0].innerHTML = ""; //Eliminamos el contenido anterios en caso de que exista algo
                 let e = 1;

@@ -29,7 +29,7 @@ export default function search() {
 
           let img = document.createElement("img"); //Crear img  que será la foto de la Meal-card
           img.src = element["strMealThumb"]; // Insertar el link de la imagen en la img
-          img.style.height = "12.5rem"; //200 px
+          img.style.height = "14rem"; 
           let a = document.createElement("a"); //Crear a que será el link que nos llevará a la segunda página con la receta
           let meal = element["strMeal"];
           meal = meal.replace(/ /g, "_")
