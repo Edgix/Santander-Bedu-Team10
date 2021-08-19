@@ -101,9 +101,10 @@ button{
 }
 
 .recetas {
+    margin-top: 250px;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    margin-top: 300px;
 }
 
 .recetaCard:hover{
